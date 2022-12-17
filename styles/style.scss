@@ -64,12 +64,6 @@ p {
   border-radius: 15.5px;
   background-color: $Dark_Grayish_Blue;
 }
-@media screen and (max-width: 700px) {
-  .advice-generator {
-    transform: scale(0.9);
-    max-width: 95vw;
-  }
-}
 //added by js
 .advice-generator-animate {
   animation: pop 0.3s linear;
@@ -114,4 +108,16 @@ p {
 }
 .toogle-btn:active {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 700px) {
+  .advice-generator {
+    transform: scale(0.9);
+    padding: 2.5rem 1rem;
+    max-width: 98vw;
+  }
+  .advice-lines {
+    transform: scale(0.7);
+    padding-bottom: 1rem;
+  }
 }

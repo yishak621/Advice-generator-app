@@ -57,12 +57,6 @@ p {
   background-color: hsl(217deg, 19%, 24%);
 }
 
-@media screen and (max-width: 700px) {
-  .advice-generator {
-    transform: scale(0.9);
-    max-width: 95vw;
-  }
-}
 .advice-generator-animate {
   -webkit-animation: pop 0.3s linear;
           animation: pop 0.3s linear;
@@ -110,4 +104,16 @@ p {
 
 .toogle-btn:active {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 700px) {
+  .advice-generator {
+    transform: scale(0.9);
+    padding: 2.5rem 1rem;
+    max-width: 98vw;
+  }
+  .advice-lines {
+    transform: scale(0.7);
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
