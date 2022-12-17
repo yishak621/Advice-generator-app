@@ -1,0 +1,116 @@
+/*ANIMATIONS*/
+@keyframes pop {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+//Variables
+//color-Primary
+$Light_Cyan: hsl(193, 38%, 86%);
+$Neon_Green: hsl(150, 100%, 66%);
+
+//color-Neutral
+$Grayish_Blue: hsl(217, 19%, 38%);
+$Dark_Grayish_Blue: hsl(217, 19%, 24%);
+$Dark_Blue: hsl(218, 23%, 16%);
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+
+  margin: 0;
+  height: 127vh;
+  width: 105.5vw;
+
+  background-color: $Dark_Blue;
+  font-family: 'Manrope', sans-serif;
+
+  transition: background 0.8s;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+//Advice section
+.advice-generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2.5rem 2.4rem;
+  padding-bottom: 4.4rem;
+  max-width: 33.5rem;
+
+  position: relative;
+  border-radius: 15.5px;
+  background-color: $Dark_Grayish_Blue;
+}
+@media screen and (max-width: 700px) {
+  .advice-generator {
+    transform: scale(0.9);
+  }
+}
+//added by js
+.advice-generator-animate {
+  animation: pop 0.3s linear;
+}
+.advice-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.advice-number {
+  color: $Neon_Green;
+  letter-spacing: 4.5px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.advice-paragraph {
+  color: $Light_Cyan;
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.4;
+}
+//btns
+.toogle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.15rem;
+
+  border: transparent;
+  outline: 0;
+  background-color: $Neon_Green;
+  border-radius: 100%;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: -1.7rem;
+  transition: all 0.3s ease-in-out;
+}
+.toogle-btn:hover {
+  box-shadow: 0 0 5px 1px $Neon_Green;
+}
+.toogle-btn:active {
+  transform: scale(0.9);
+}

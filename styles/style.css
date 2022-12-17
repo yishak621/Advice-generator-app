@@ -1,0 +1,112 @@
+/*ANIMATIONS*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@-webkit-keyframes pop {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pop {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  margin: 0;
+  height: 127vh;
+  width: 105.5vw;
+  background-color: hsl(218deg, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+  transition: background 0.8s;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.advice-generator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2.4rem;
+  padding-bottom: 4.4rem;
+  max-width: 33.5rem;
+  position: relative;
+  border-radius: 15.5px;
+  background-color: hsl(217deg, 19%, 24%);
+}
+
+@media screen and (max-width: 700px) {
+  .advice-generator {
+    transform: scale(0.9);
+  }
+}
+.advice-generator-animate {
+  -webkit-animation: pop 0.3s linear;
+          animation: pop 0.3s linear;
+}
+
+.advice-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.advice-number {
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 4.5px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.advice-paragraph {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.toogle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.15rem;
+  border: transparent;
+  outline: 0;
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  bottom: -1.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.toogle-btn:hover {
+  box-shadow: 0 0 5px 1px hsl(150deg, 100%, 66%);
+}
+
+.toogle-btn:active {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */
