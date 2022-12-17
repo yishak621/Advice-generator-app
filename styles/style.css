@@ -60,6 +60,7 @@ p {
 @media screen and (max-width: 700px) {
   .advice-generator {
     transform: scale(0.9);
+    max-width: 95vw;
   }
 }
 .advice-generator-animate {
