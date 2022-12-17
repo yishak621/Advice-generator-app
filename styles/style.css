@@ -36,7 +36,7 @@ body {
   width: 105.5vw;
   background-color: hsl(218deg, 23%, 16%);
   font-family: "Manrope", sans-serif;
-  transition: background 0.8s;
+  transition: background 0.95s;
 }
 
 p {
